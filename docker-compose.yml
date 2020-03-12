@@ -32,7 +32,7 @@ services:
       DB_URL: db
       DB_PASSWORD: password
       WEBPACKER_DEV_SERVER_HOST: webpacker
-      WEBPACKER_DEV_SERVER_PUBLIC: 0.0.0.0:3305
+      WEBPACKER_DEV_SERVER_PUBLIC: 0.0.0.0:3035
     tmpfs:
       - /tmp
 
@@ -50,7 +50,7 @@ services:
     depends_on:
       - web
     ports:
-      - "3305:3305"
+      - "3035:3035"
 
 volumes:
   node_modules:
