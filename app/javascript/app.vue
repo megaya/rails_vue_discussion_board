@@ -1,25 +1,29 @@
 <template>
-  <div id="app">
-    <p>{{ message }}</p>
-    <div class="text-center my-3">
-      <b-button v-b-tooltip.hover title="Tooltip content">Hover Me</b-button>
-    </div>
-  </div>
+	<div>
+		<Header />
+    <b-container>
+      <QuestionForm />
+      <QuestionList />
+    </b-container>
+	</div>
 </template>
 
 <script>
+import Header from './components/Header.vue'
+import QuestionForm from './components/QuestionForm.vue'
+import QuestionList from './components/QuestionList.vue'
+
 export default {
-  data: function () {
-    return {
-      message: "Hello Vue!"
-    }
-  }
+	components: {
+		Header,
+    QuestionForm,
+    QuestionList,
+  },
+	data() {
+		return {
+		}
+	},
+	methods: {
+	}
 }
 </script>
-
-<style scoped>
-p {
-  font-size: 2em;
-  text-align: center;
-}
-</style>
