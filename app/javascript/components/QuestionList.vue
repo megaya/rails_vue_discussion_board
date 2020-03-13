@@ -9,6 +9,9 @@
 				align="center"
 			>
 				<b-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b-card-text>
+        <router-link :to="{ name: 'question_show', params: { id: 123 }}">
+          unko
+        </router-link>
 			</b-card>
 
 			<b-card
