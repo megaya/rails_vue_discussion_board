@@ -16,8 +16,8 @@ ActiveRecord::Schema.define(version: 2020_03_13_062329) do
     t.bigint "user_id"
     t.string "title"
     t.string "description"
-    t.integer "category"
-    t.integer "status", default: 0
+    t.integer "category", default: 0
+    t.integer "status", default: 1
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_questions_on_user_id"
